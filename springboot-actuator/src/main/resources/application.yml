@@ -4,13 +4,27 @@ management:
     web:
       exposure:
         include: "*"
-#spring:
-#  profiles:
-#    active: prod
-#  datasource:
-#    driver-class-name: com.mysql.jdbc.Driver
-#    url: jdbc:mysql://127.0.0.1:3306/test
-#    username: root
-#    password: root
-#itmayiedu:
-#   name: yushengjun
+####如果mysql账号或者密码错误的话，启动的时候是不会报错的（因为底层 采用的是懒加载）  http://localhost:8080//actuator/health
+spring:
+  profiles:
+    active: prod
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://111.231.55.110:3306/test?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+
+####相当在配置文件中，配置相关info开头的配置信息  http://localhost:8080//actuator/info
+info:
+  qaaaa:
+    name: abing abing
+
+
+
+
+##    /actuator/beans	显示应用程序中所有Spring bean的完整列表。
+  ##  /actuator/configprops	显示所有配置信息。
+   ## /actuator/env	陈列所有的环境变量。
+  ##  /actuator/mappings	显示所有@RequestMapping的url整理列表。
+  ##  /actuator/health	显示应用程序运行状况信息 up表示成功down失败
+  ##  /actuator/info	查看自定义应用信息
