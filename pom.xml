@@ -14,6 +14,9 @@
         <module>springboot-devtools</module>
         <module>springboot-jvm</module>
         <module>springboot-actuator</module>
+        <module>springboot-adminui-server</module>
+        <module>springboot-adminui-client</module>
+        <module>springboot-mybatis-pagehelper</module>
     </modules>
     <groupId>com.abing.demo</groupId>
     <artifactId>SpringBootDemo</artifactId>
