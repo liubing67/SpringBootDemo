@@ -15,6 +15,8 @@ public class IndexController {
 
     @RequestMapping("/findUserList")
     public PageInfo<User> findUserList(int page,int rows){
-        return userService.findUserList(page,rows);
+        PageInfo<User> pageInfo=userService.findUserList(page,rows);
+        System.out.println(pageInfo.getPageNum());
+        return pageInfo;
     }
 }
