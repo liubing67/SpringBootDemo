@@ -13,12 +13,30 @@
         <module name="springboot-jdbc" />
         <module name="springboot-jpa" />
         <module name="springboot-jvm" />
+        <module name="springboot-mybatis" />
         <module name="springboot-mybatis-fenbao" />
         <module name="springboot-mybatis-fenbao-fenbushi" />
         <module name="springboot-mybatis-pagehelper" />
         <module name="springboot-port" />
+        <module name="springboot-ratelimiter" />
         <module name="springbootmybatis" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="springboot-actuator" target="1.8" />
+      <module name="springboot-adminui-client" target="1.8" />
+      <module name="springboot-adminui-server" target="1.8" />
+      <module name="springboot-devtools" target="1.8" />
+      <module name="springboot-jdbc" target="1.8" />
+      <module name="springboot-jpa" target="1.8" />
+      <module name="springboot-jvm" target="1.8" />
+      <module name="springboot-mybatis" target="1.8" />
+      <module name="springboot-mybatis-fenbao" target="1.8" />
+      <module name="springboot-mybatis-fenbao-fenbushi" target="1.8" />
+      <module name="springboot-mybatis-pagehelper" target="1.8" />
+      <module name="springboot-port" target="1.8" />
+      <module name="springboot-ratelimiter" target="1.8" />
+      <module name="SpringBootDemo" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

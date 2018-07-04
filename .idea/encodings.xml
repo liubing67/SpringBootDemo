@@ -14,5 +14,6 @@
     <file url="file://$PROJECT_DIR$/springboot-mybatis-fenbao-fenbushi" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-mybatis-pagehelper" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-port" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springboot-ratelimiter" charset="UTF-8" />
   </component>
 </project>
