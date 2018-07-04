@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot-actuator" />
+        <module name="springboot-adminui-client" />
+        <module name="springboot-adminui-server" />
+        <module name="springboot-devtools" />
+        <module name="springboot-jdbc" />
+        <module name="springboot-jpa" />
+        <module name="springboot-jvm" />
+        <module name="springboot-mybatis-fenbao" />
+        <module name="springboot-mybatis-fenbao-fenbushi" />
+        <module name="springboot-mybatis-pagehelper" />
+        <module name="springboot-port" />
+        <module name="springbootmybatis" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
