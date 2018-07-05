@@ -1,5 +1,6 @@
 package com.abing.ratelimiter.controller;
 
+import com.abing.ratelimiter.annotation.ExtRateLimiter;
 import com.abing.ratelimiter.service.OrderService;
 import com.google.common.util.concurrent.RateLimiter;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,7 @@ public class IndexController {
 
     //create 方法中传入一个参数 以每秒为单位固定的速率值 5r/s 每秒中往桶中存入5个令牌
     RateLimiter rateLimiter=RateLimiter.create(5);//独立线程
-    @RequestMapping
+    @RequestMapping("/addOrder")
     public String addOrder(){
         //1、限流处理 限流正常要放在网关  客户端从桶中获取对应的令牌，为什么返回double结果，这个结果表示从桶中拿到令牌等待时间。
         //2、如果获取不到令牌，就会一直等待  ，设置服务降级处理（相当于配置在规定时间内如果没有获取到令牌的话，直接走服务降级）
@@ -39,6 +40,13 @@ public class IndexController {
         }
 
         return "抢购失败！";
+    }
+
+    @RequestMapping("/findOrder")
+    @ExtRateLimiter
+    public String findOrder(){
+        System.out.println("aaa");
+        return "抢购成功";
     }
 
 }
