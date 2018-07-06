@@ -42,8 +42,10 @@ public class IndexController {
         return "抢购失败！";
     }
 
+
+    // 以每秒添加1个令牌到令牌桶中
+    @ExtRateLimiter(permitsPerSecond = 1.0, timeout = 100)
     @RequestMapping("/findOrder")
-    @ExtRateLimiter
     public String findOrder(){
         System.out.println("aaa");
         return "抢购成功";
