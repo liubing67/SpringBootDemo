@@ -18,6 +18,7 @@
         <module>springboot-adminui-client</module>
         <module>springboot-mybatis-pagehelper</module>
         <module>springboot-ratelimiter</module>
+        <module>springboot-test</module>
     </modules>
     <groupId>com.abing.demo</groupId>
     <artifactId>SpringBootDemo</artifactId>

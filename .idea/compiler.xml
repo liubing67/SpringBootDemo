@@ -19,6 +19,7 @@
         <module name="springboot-mybatis-pagehelper" />
         <module name="springboot-port" />
         <module name="springboot-ratelimiter" />
+        <module name="springboot-test" />
         <module name="springbootmybatis" />
       </profile>
     </annotationProcessing>
