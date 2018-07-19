@@ -9,6 +9,7 @@
         <module name="springboot-actuator" />
         <module name="springboot-adminui-client" />
         <module name="springboot-adminui-server" />
+        <module name="springboot-appid-appsecret" />
         <module name="springboot-devtools" />
         <module name="springboot-fangzhibiaodanchongfutijiao" />
         <module name="springboot-jdbc" />

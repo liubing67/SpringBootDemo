@@ -20,6 +20,7 @@
         <module>springboot-ratelimiter</module>
         <module>springboot-test</module>
         <module>springboot-fangzhibiaodanchongfutijiao</module>
+        <module>springboot-appid-appsecret</module>
     </modules>
     <groupId>com.abing.demo</groupId>
     <artifactId>SpringBootDemo</artifactId>
