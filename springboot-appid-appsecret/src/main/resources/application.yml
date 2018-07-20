@@ -8,7 +8,7 @@ spring:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://www.abing67.club:3306/test?useUnicode=true&characterEncoding=UTF-8
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
@@ -19,9 +19,9 @@ spring:
     min-evictable-idle-time-millis: 1800000
   redis:
     database: 1
-    host: 106.15.185.133
+    host: 111.231.55.110
     port: 6379
-    password: meitedu.+@
+    password:
     jedis:
       pool:
         max-active: 8

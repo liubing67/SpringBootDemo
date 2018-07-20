@@ -12,6 +12,7 @@ import com.abing.appidsecret.entity.AppEntity;
 import com.abing.appidsecret.mapper.AppMapper;
 import com.abing.appidsecret.utils.BaseRedisService;
 import com.abing.appidsecret.utils.TokenUtils;
+import org.apache.http.util.TextUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -41,7 +42,11 @@ public class AuthController extends BaseApiService {
 		// ### 获取新的accessToken 之前删除之前老的accessToken
 		// 从redis中删除之前的accessToken
 		String accessToken = appResult.getAccessToken();
-		baseRedisService.delKey(accessToken);
+		if (!TextUtils.isEmpty(accessToken))
+		{
+			baseRedisService.delKey(accessToken);
+		}
+
 		// 生成的新的accessToken
 		String newAccessToken = newAccessToken(appResult.getAppId());
 		JSONObject jsonObject = new JSONObject();
