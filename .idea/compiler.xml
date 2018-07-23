@@ -11,6 +11,7 @@
         <module name="springboot-adminui-server" />
         <module name="springboot-appid-appsecret" />
         <module name="springboot-devtools" />
+        <module name="springboot-encrypt" />
         <module name="springboot-fangzhibiaodanchongfutijiao" />
         <module name="springboot-jdbc" />
         <module name="springboot-jpa" />
