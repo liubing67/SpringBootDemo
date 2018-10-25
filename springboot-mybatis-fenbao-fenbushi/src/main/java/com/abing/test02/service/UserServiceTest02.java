@@ -16,7 +16,7 @@ public class UserServiceTest02 {
     @Autowired
     private UserMapperTest01 userMapperTest01;
 
-    @Transactional()
+    @Transactional(transactionManager = "test2TransactionManager")
     public int insertUser(String name,Integer age){
         int insertUserResult=userMapperTest02.insert(name,age);
         log.info("insertUserResult:{}",insertUserResult);
@@ -24,7 +24,7 @@ public class UserServiceTest02 {
         return insertUserResult;
     }
 
-    @Transactional()
+    @Transactional(transactionManager = "test2TransactionManager")
     public int insertUserTest01AndTest02(String name,Integer age){
         //第一个数据源
         int insertUserResult01=userMapperTest01.insert(name,age);
