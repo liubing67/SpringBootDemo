@@ -22,6 +22,7 @@
         <module>springboot-fangzhibiaodanchongfutijiao</module>
         <module>springboot-appid-appsecret</module>
         <module>springboot-encrypt</module>
+        <module>springboot-RabbitMQ</module>
     </modules>
     <groupId>com.abing.demo</groupId>
     <artifactId>SpringBootDemo</artifactId>

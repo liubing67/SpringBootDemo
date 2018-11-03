@@ -1,0 +1,15 @@
+spring:
+  rabbitmq:
+  ####连接地址
+    host: www.abing67.club
+   ####端口号   
+    port: 5672
+   ####账号 
+    username: admin
+   ####密码  
+    password: admin
+   ### 地址
+    virtual-host: /admin_host
+
+server:
+  port: 8081
