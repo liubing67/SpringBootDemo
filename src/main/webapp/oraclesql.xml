@@ -1,6 +1,5 @@
 
-<!--查询FIMA_AGENTBALANCESHEET表中第30条数据，，返回第30条数据-->
-<!--select * from (select rownum as rn,FIMA_AGENTBALANCESHEET.* from FIMA_AGENTBALANCESHEET) where rn = 30-->
+
 
 <!--查询FIMA_AGENTBALANCESHEET表中大于2017-04-28 09:54:29时间的所有数据-->
 <!--select * from FIMA_AGENTBALANCESHEET where CREATEDATE>to_date('2017-04-28 09:54:29','yyyy-MM-dd hh24:mi:ss');-->
@@ -17,5 +16,8 @@
 <!--SELECT * FROM FIMA_AGENTBALANCESHEET  WHERE ROWNUM<=10 ORDER BY  CREATEDATE DESC-->
 
 
-<!--伪列查询，查询第4列的数据-->
-<!--select * from (select rownum as rn,FIMA_AGENTBALANCESHEET.* from FIMA_AGENTBALANCESHEET) where rn = 4-->
+<!--伪列查询，查询第i列的数据-->
+<!--select * from (select rownum as rn,FIMA_AGENTBALANCESHEET.* from FIMA_AGENTBALANCESHEET) where rn = #{i}-->
+
+<!--查询FIMA_AGENTBALANCESHEET表中第30条数据，，查询第30条数据-->
+<!--select * from (select rownum as rn,FIMA_AGENTBALANCESHEET.* from FIMA_AGENTBALANCESHEET) where rn = 30-->
