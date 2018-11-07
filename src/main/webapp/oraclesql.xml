@@ -1,8 +1,17 @@
 
-
-<!--查询FIMA_AGENTBALANCESHEET表中某个时间下的第1条数据-->
-<!--select * from (select rownum as rn,FIMA_AGENTBALANCESHEET.* from FIMA_AGENTBALANCESHEET where CREATEDATE>to_date('2017-04-28 09:54:29','yyyy-MM-dd hh24:mi:ss'))where rn = 1-->
-
-
-<!--查询FIMA_AGENTBALANCESHEET表中前30条数据-->
+<!--查询FIMA_AGENTBALANCESHEET表中第30条数据，，返回第30条数据-->
 <!--select * from (select rownum as rn,FIMA_AGENTBALANCESHEET.* from FIMA_AGENTBALANCESHEET) where rn = 30-->
+
+<!--查询FIMA_AGENTBALANCESHEET表中大于2017-04-28 09:54:29时间的所有数据-->
+<!--select * from FIMA_AGENTBALANCESHEET where CREATEDATE>to_date('2017-04-28 09:54:29','yyyy-MM-dd hh24:mi:ss');-->
+
+<!--查询FIMA_AGENTBALANCESHEET表中大于2017-04-28 09:54:29时间的前两条数据-->
+<!--select * from FIMA_AGENTBALANCESHEET where ROWNUM<=2 AND CREATEDATE>to_date('2017-04-28 09:54:29','yyyy-MM-dd hh24:mi:ss');-->
+
+
+<!--查询FIMA_AGENTBALANCESHEET表中某个时间下的第10条数据，，返回第10条数据-->
+<!--select * from (select rownum as rn,FIMA_AGENTBALANCESHEET.* from FIMA_AGENTBALANCESHEET where CREATEDATE>to_date('2017-04-28 09:54:29','yyyy-MM-dd hh24:mi:ss'))where rn = 10-->
+
+
+<!--按照 CREATEDATE 字段倒序排列，取10条数据-->
+<!--SELECT * FROM FIMA_AGENTBALANCESHEET  WHERE ROWNUM<=10 ORDER BY  CREATEDATE DESC-->
