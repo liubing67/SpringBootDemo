@@ -1,0 +1,8 @@
+
+
+<!--查询FIMA_AGENTBALANCESHEET表中某个时间下的第1条数据-->
+<!--select * from (select rownum as rn,FIMA_AGENTBALANCESHEET.* from FIMA_AGENTBALANCESHEET where CREATEDATE>to_date('2017-04-28 09:54:29','yyyy-MM-dd hh24:mi:ss'))where rn = 1-->
+
+
+<!--查询FIMA_AGENTBALANCESHEET表中前30条数据-->
+<!--select * from (select rownum as rn,FIMA_AGENTBALANCESHEET.* from FIMA_AGENTBALANCESHEET) where rn = 30-->
