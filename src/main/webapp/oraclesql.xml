@@ -15,3 +15,7 @@
 
 <!--按照 CREATEDATE 字段倒序排列，取10条数据-->
 <!--SELECT * FROM FIMA_AGENTBALANCESHEET  WHERE ROWNUM<=10 ORDER BY  CREATEDATE DESC-->
+
+
+<!--伪列查询，查询第4列的数据-->
+<!--select * from (select rownum as rn,FIMA_AGENTBALANCESHEET.* from FIMA_AGENTBALANCESHEET) where rn = 4-->
