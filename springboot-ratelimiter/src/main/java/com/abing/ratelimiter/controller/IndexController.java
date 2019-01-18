@@ -25,7 +25,7 @@ public class IndexController {
         System.out.println("从桶中获取令牌等待时间："+acquire);
 
         //如果在500毫秒内 还没有获取到令牌的话，则直接走服务降级处理
-        boolean tryAcquire=rateLimiter.tryAcquire(500, TimeUnit.MILLISECONDS);
+        boolean tryAcquire=rateLimiter.tryAcquire(10, TimeUnit.MILLISECONDS);
         if (!tryAcquire){
             System.out.println("别抢了，在抢也是一直等待，还是放弃吧！");
             return "别抢了，在抢也是一直等待，还是放弃吧！";

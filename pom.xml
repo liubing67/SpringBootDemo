@@ -23,6 +23,8 @@
         <module>springboot-appid-appsecret</module>
         <module>springboot-encrypt</module>
         <module>springboot-RabbitMQ</module>
+        <module>springboot-kafka</module>
+        <module>springboot-layui</module>
     </modules>
     <groupId>com.abing.demo</groupId>
     <artifactId>SpringBootDemo</artifactId>
