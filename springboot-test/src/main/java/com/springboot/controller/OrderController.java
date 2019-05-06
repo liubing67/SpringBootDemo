@@ -16,7 +16,7 @@ public class OrderController {
     public String getToken(){
         return TokenUtil.getToken();
     }
-    @RequestMapping(value = "/addOrder",produces = "application/json,charset=utf-8")
+//    @RequestMapping(value = "/addOrder",produces = "application/json,charset=utf-8")
     public String addOrder(@RequestBody OrderEntity orderEntity, HttpServletRequest request){
         //获取令牌存放在请求头中
      String token =request.getHeader("token");

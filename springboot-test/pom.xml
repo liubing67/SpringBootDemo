@@ -12,4 +12,18 @@
     <artifactId>springboot-test</artifactId>
 
 
+    <dependencies>
+
+        <dependency>
+            <groupId>com.google.zxing</groupId>
+            <artifactId>core</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.twelvemonkeys.imageio</groupId>
+            <artifactId>imageio-jpeg</artifactId>
+            <version>3.0-rc5</version>
+        </dependency>
+    </dependencies>
 </project>
