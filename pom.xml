@@ -25,6 +25,7 @@
         <module>springboot-RabbitMQ</module>
         <module>springboot-kafka</module>
         <module>springboot-layui</module>
+        <module>springboot-netty</module>
     </modules>
     <groupId>com.abing.demo</groupId>
     <artifactId>SpringBootDemo</artifactId>
